@@ -1,0 +1,16 @@
+name: Hello Balena
+description: >-
+  A simple hello world example for balenaCloud
+type: sw.application
+assets:
+  repository:
+    type: blob.asset
+    data:
+      url: https://github.com/nicomiguelino/hello-balena
+data:
+  defaultDeviceType: raspberrypi4-64
+  supportedDeviceTypes:
+    - raspberrypi4-64
+    - raspberrypi3-64
+    - raspberrypi3
+version: 0.0.0
